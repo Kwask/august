@@ -10,6 +10,9 @@ private:
   unsigned int flags = 0; // Stores any raised flags
 
 public:
+  Engine();
+  ~Engine();
+
   bool initialize(); // Initializes and loads variables if there are any
   bool start(); // Instantizes objects and begins the processing loop
   bool pause(); // Pauses processing
@@ -21,11 +24,15 @@ public:
   void idle(); // Processes a single tick of the game
 };
 
-bool initialize();
+bool Engine::initialize()
 {
   flags = 0;
 }
 
+bool Engine::start()
+{
+  
+}
 
 
 #endif

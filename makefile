@@ -2,7 +2,7 @@ CC = g++
 CFLAGS = -std=c++11
 
 SOURCES = main.cpp
-DEPS = HelperFuncs.h
+DEPS = config.h engine.h helpers.h mesh.h point.h rect.h
 FILES = $(SOURCES) $(DEPS)
 
 LINKER_FLAGS = -lglfw3 -lGL -lX11 -lXi -lXrandr -lXxf86vm -lXinerama -lXcursor -lrt -lm -pthread
