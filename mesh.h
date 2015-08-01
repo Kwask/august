@@ -6,10 +6,10 @@
 
 struct Mesh
 {
-private:
+  private:
   std::vector<Point> vetices;
   
-public:
+  public:
   void render();
 };
 

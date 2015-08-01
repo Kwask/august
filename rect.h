@@ -5,16 +5,28 @@
 
 class Rect
 {
-private:
+  private:
   Point origin;
   Point end;
 
-public:
+  public:
+  Rect( Point* origin, Point* end );
+  ~Rect();
   void setPoints( Point* origin, Point* end );
-
+  
 };
 
-void Rect::setPoints( Point* origin = null, Point* end = null )
+Rect::Rect( Point* origin = nullptr, Point* end = nullptr )
+{
+  setPoints( origin, end );
+}
+
+Rect::~Rect()
+{
+  
+}
+
+void Rect::setPoints( Point* origin = nullptr, Point* end = nullptr )
 {
   if( origin )
   {
@@ -26,3 +38,5 @@ void Rect::setPoints( Point* origin = null, Point* end = null )
     this->end = *end;
   }
 }
+
+
